@@ -1,0 +1,30 @@
+{
+    "name": "chrisw1337/testpoc",
+    "description": "A description of my package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris White",
+            "email": "chris.white13377@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "chrisw1337\\testpoc\\": "src/"
+        }
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "@php scripts/pre-install.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.4.5"
+        }
+    }
+}
